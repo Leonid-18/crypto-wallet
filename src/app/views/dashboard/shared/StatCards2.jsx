@@ -78,7 +78,7 @@ const StatCards2 = () => {
           </ContentBox>
 
           <ContentBox sx={{ pt: 2 }}>
-            <H1>3.3k</H1>
+            <H1>$3.3k</H1>
             <IconBox sx={{ background: bgError }}>
               <Icon className="icon">expand_less</Icon>
             </IconBox>
