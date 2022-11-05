@@ -64,10 +64,10 @@ const TopSellingTable = () => {
   return (
     <Card elevation={3} sx={{ pt: '20px', mb: 3 }}>
       <CardHeader>
-        <Title>top selling products</Title>
+        <Title>Last Trasactions</Title>
         <Select size="small" defaultValue="this_month">
-          <MenuItem value="this_month">This Month</MenuItem>
-          <MenuItem value="last_month">Last Month</MenuItem>
+          <MenuItem value="this_month">Crypto</MenuItem>
+          <MenuItem value="last_month">Fiat</MenuItem>
         </Select>
       </CardHeader>
 
@@ -76,16 +76,13 @@ const TopSellingTable = () => {
           <TableHead>
             <TableRow>
               <TableCell sx={{ px: 3 }} colSpan={4}>
-                Name
+                Merchant's Name
               </TableCell>
               <TableCell sx={{ px: 0 }} colSpan={2}>
-                Revenue
+                Amount
               </TableCell>
               <TableCell sx={{ px: 0 }} colSpan={2}>
-                Stock Status
-              </TableCell>
-              <TableCell sx={{ px: 0 }} colSpan={1}>
-                Action
+                Total Balance
               </TableCell>
             </TableRow>
           </TableHead>
@@ -95,7 +92,8 @@ const TopSellingTable = () => {
               <TableRow key={index} hover>
                 <TableCell colSpan={4} align="left" sx={{ px: 0, textTransform: 'capitalize' }}>
                   <Box display="flex" alignItems="center">
-                    <Avatar src={product.imgUrl} />
+                    {/* <Avatar src={product.imgUrl} /> */}
+                    <Icon></Icon>
                     <Paragraph sx={{ m: 0, ml: 4 }}>{product.name}</Paragraph>
                   </Box>
                 </TableCell>
@@ -114,12 +112,6 @@ const TopSellingTable = () => {
                   ) : (
                     <Small bgcolor={bgError}>out of stock</Small>
                   )}
-                </TableCell>
-
-                <TableCell sx={{ px: 0 }} colSpan={1}>
-                  <IconButton>
-                    <Icon color="primary">edit</Icon>
-                  </IconButton>
                 </TableCell>
               </TableRow>
             ))}
