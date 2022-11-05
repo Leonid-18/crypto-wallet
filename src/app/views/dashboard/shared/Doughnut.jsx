@@ -81,11 +81,11 @@ const DoughnutChart = ({ height, color = [] }) => {
                 data: [
                     {
                         value: 65,
-                        name: 'Google',
+                        name: 'OUT CRYPTO',
                     },
                     {
                         value: 20,
-                        name: 'Facebook',
+                        name: 'Bitcoin',
                     },
                     { value: 15, name: 'Others' },
                 ],
