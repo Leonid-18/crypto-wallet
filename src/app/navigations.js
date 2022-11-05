@@ -1,14 +1,14 @@
 export const navigations = [
   { name: 'My account', path: '/dashboard/default', icon: 'dashboard' },
-  { label: 'PAGES', type: 'label' },
+  { label: 'Settings', type: 'label' },
   {
-    name: 'Session/Auth',
+    name: 'Profile',
     icon: 'security',
     children: [
-      { name: 'Sign in', iconText: 'SI', path: '/session/signin' },
-      { name: 'Sign up', iconText: 'SU', path: '/session/signup' },
+      // { name: 'Sign in', iconText: 'SI', path: '/session/signin' },
+      // { name: 'Sign up', iconText: 'SU', path: '/session/signup' },
       { name: 'Forgot Password', iconText: 'FP', path: '/session/forgot-password' },
-      { name: 'Error', iconText: '404', path: '/session/404' },
+      // { name: 'Error', iconText: '404', path: '/session/404' },
     ],
   },
   // { label: 'Components', type: 'label' },

@@ -55,15 +55,15 @@ const StatCards2 = () => {
             <FabIcon size="medium" sx={{ background: 'rgba(9, 182, 109, 0.15)' }}>
               <Icon sx={{ color: '#08ad6c' }}>trending_up</Icon>
             </FabIcon>
-            <H3 textcolor={'#08ad6c'}>Active Users</H3>
+            <H3 textcolor={'#08ad6c'}>Total Inflow</H3>
           </ContentBox>
 
           <ContentBox sx={{ pt: 2 }}>
-            <H1>10.8k</H1>
+            <H1>$2.1k</H1>
             <IconBox sx={{ background: 'rgba(9, 182, 109, 0.15)' }}>
               <Icon className="icon">expand_less</Icon>
             </IconBox>
-            <Span textcolor={'#08ad6c'}>(+21%)</Span>
+            <Span textcolor={'#08ad6c'}>(+11%)</Span>
           </ContentBox>
         </Card>
       </Grid>
@@ -72,17 +72,17 @@ const StatCards2 = () => {
         <Card elevation={3} sx={{ p: 2 }}>
           <ContentBox>
             <FabIcon size="medium" sx={{ background: bgError, overflow: 'hidden' }}>
-              <Icon sx={{ color: textError }}>star_outline</Icon>
+              <Icon sx={{ color: textError }}>trending_down</Icon>
             </FabIcon>
-            <H3 textcolor={textError}>Transactions</H3>
+            <H3 textcolor={textError}>Total Outflow</H3>
           </ContentBox>
 
           <ContentBox sx={{ pt: 2 }}>
-            <H1>$2.8M</H1>
+            <H1>3.3k</H1>
             <IconBox sx={{ background: bgError }}>
               <Icon className="icon">expand_less</Icon>
             </IconBox>
-            <Span textcolor={textError}>(+21%)</Span>
+            <Span textcolor={textError}>(+31%)</Span>
           </ContentBox>
         </Card>
       </Grid>

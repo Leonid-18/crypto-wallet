@@ -46,7 +46,7 @@ const RowCards = () => {
 
   return [1, 2, 3, 4].map((id) => (
     <Fragment key={id}>
-      <Card sx={{ py: 1, px: 2 }} className="project-card">
+      {/* <Card sx={{ py: 1, px: 2 }} className="project-card">
         <Grid container alignItems="center">
           <Grid item md={5} xs={7}>
             <Box display="flex" alignItems="center">
@@ -89,8 +89,8 @@ const RowCards = () => {
             </Box>
           </Grid>
         </Grid>
-      </Card>
-      <Box py={1} />
+      </Card> */}
+      {/* <Box py={1} /> */}
     </Fragment>
   ));
 };

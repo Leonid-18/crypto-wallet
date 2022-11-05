@@ -30,7 +30,7 @@ const Heading = styled('h6')(({ theme }) => ({
 const StatCards = () => {
   const cardList = [
     { name: 'DYME Balance', amount: "3050 DYM ~ 1200$", icon: 'cached' },
-    { name: 'This week Spends', amount: '$80,500', icon: 'attach_money' },
+    { name: 'Fiat Balance', amount: '$3500', icon: 'attach_money' },
     { name: 'Stake amount', amount: '8.5% Stock Surplus', icon: 'store' },
     { name: 'Send to friends', amount: 120 , icon: 'group' },
   ];
@@ -48,11 +48,11 @@ const StatCards = () => {
               </Box>
             </ContentBox>
 
-            <Tooltip title="View Details" placement="top">
+            {/* <Tooltip title="View Details" placement="top">
               <IconButton>
                 <Icon>arrow_right_alt</Icon>
               </IconButton>
-            </Tooltip>
+            </Tooltip> */}
           </StyledCard>
         </Grid>
       ))}

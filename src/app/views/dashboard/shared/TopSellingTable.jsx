@@ -93,17 +93,25 @@ const TopSellingTable = () => {
                 <TableCell colSpan={4} align="left" sx={{ px: 0, textTransform: 'capitalize' }}>
                   <Box display="flex" alignItems="center">
                     {/* <Avatar src={product.imgUrl} /> */}
-                    <Icon></Icon>
+                    {/* "arrow_back",
+  "arrow_downward",
+  "arrow_drop_down",
+  "arrow_drop_down_circle",
+  "arrow_drop_up",
+  "arrow_forward",
+  "arrow_upward", */}
+                     {product.price > 0 ?
+                    <Icon className="icon" color="success">arrow_forward</Icon> : <Icon className="icon" color="error">arrow_back</Icon>}
                     <Paragraph sx={{ m: 0, ml: 4 }}>{product.name}</Paragraph>
                   </Box>
                 </TableCell>
 
                 <TableCell align="left" colSpan={2} sx={{ px: 0, textTransform: 'capitalize' }}>
-                  ${product.price > 999 ? (product.price / 1000).toFixed(1) + 'k' : product.price}
+                  {product.price > 0 ? `$${product.price}` : `-$${product.price.toString().replace('-', "")}`}
                 </TableCell>
 
                 <TableCell sx={{ px: 0 }} align="left" colSpan={2}>
-                  {product.available ? (
+                  {/* {product.available ? (
                     product.available < 20 ? (
                       <Small bgcolor={bgSecondary}>{product.available} available</Small>
                     ) : (
@@ -111,7 +119,8 @@ const TopSellingTable = () => {
                     )
                   ) : (
                     <Small bgcolor={bgError}>out of stock</Small>
-                  )}
+                  )} */}
+                  {product.available}$
                 </TableCell>
               </TableRow>
             ))}
@@ -125,33 +134,45 @@ const TopSellingTable = () => {
 const productList = [
   {
     imgUrl: '/assets/images/products/headphone-2.jpg',
-    name: 'earphone',
+    name: 'DYM interest',
     price: 100,
-    available: 15,
+    available: 3600,
   },
   {
     imgUrl: '/assets/images/products/headphone-3.jpg',
-    name: 'earphone',
-    price: 1500,
-    available: 30,
+    name: 'Buy ETH',
+    price: -1500,
+    available: 3500,
   },
   {
     imgUrl: '/assets/images/products/iphone-2.jpg',
-    name: 'iPhone x',
+    name: 'Salary',
     price: 1900,
-    available: 35,
+    available: 5000,
   },
   {
     imgUrl: '/assets/images/products/iphone-1.jpg',
-    name: 'iPhone x',
+    name: 'DYM interest',
     price: 100,
-    available: 0,
+    available: 3100,
   },
   {
     imgUrl: '/assets/images/products/headphone-3.jpg',
-    name: 'Head phone',
-    price: 1190,
-    available: 5,
+    name: 'Buy BTC',
+    price: -1190,
+    available: 3000,
+  },
+  {
+    imgUrl: '/assets/images/products/headphone-3.jpg',
+    name: 'Utilities',
+    price: -200,
+    available: 4190,
+  },
+  {
+    imgUrl: '/assets/images/products/headphone-3.jpg',
+    name: 'Rent',
+    price: -500,
+    available: 4390,
   },
 ];
 
